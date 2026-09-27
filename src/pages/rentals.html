@@ -1,0 +1,69 @@
+<!--{"title": "Homes for Rent in Las Vegas & Henderson | SierraLV", "desc": "Browse available rental homes, condos and townhomes managed by SierraLV in Las Vegas and Henderson. See screening criteria and apply online.", "nav": "rentals"}-->
+<section class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Home</a> / Rentals</p>
+    <h1 class="t-display">Find your next <em class="serif">home.</em></h1>
+    <p class="t-lead">Houses, condos and townhomes across Las Vegas and Henderson — updated live as homes become available.</p>
+    <div class="btn-row mt-32"><a class="btn btn--light" href="{{LISTINGS}}" target="_blank" rel="noopener">View Available Rentals {{icon:ext}}</a><a class="btn btn--ghost-light" href="#apply">How to Apply</a></div>
+  </div>
+</section>
+
+<section class="section section--paper" aria-labelledby="listings-h">
+  <div class="container split">
+    <div class="stack-24">
+      <p class="t-eyebrow">Availability</p>
+      <h2 id="listings-h" class="t-h2" data-reveal>Always current listings.</h2>
+      <div class="prose" data-reveal>
+        <p>Our listings live on our secure rental platform, so what you see is always what's available right now — with photos, rent and full details for every home.</p>
+        <p>Found one you love? You can schedule a showing and apply online straight from the listing.</p>
+      </div>
+      <div class="btn-row" data-reveal><a class="btn btn--primary" href="{{LISTINGS}}" target="_blank" rel="noopener">Browse All Rentals {{icon:ext}}</a></div>
+    </div>
+    <div class="frame frame--wide" data-reveal>{{pic:office-building|SierraLV's office building on St Rose Parkway in Henderson, Nevada}}</div>
+  </div>
+</section>
+
+<section class="section" id="apply" aria-labelledby="apply-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="t-eyebrow">Rental resources</p>
+      <h2 id="apply-h" class="t-h2" data-reveal>How to apply.</h2>
+      <p class="t-lead" data-reveal>A simple process with clear expectations — so you know where you stand at every step.</p>
+    </div>
+    <ol class="steps" role="list">
+      <li class="step" data-reveal><span class="step__num">01</span><div><h3 class="t-h3">Find a home &amp; tour it</h3><p>Browse current listings and request a showing directly from the listing page.</p></div></li>
+      <li class="step" data-reveal><span class="step__num">02</span><div><h3 class="t-h3">Apply online</h3><p>Every adult who will live in the home completes an application. We review:</p><ul><li>FICO credit score</li><li>National background search</li><li>Eviction search</li><li>Employment &amp; income verification</li><li>Rental history</li></ul></div></li>
+      <li class="step" data-reveal><span class="step__num">03</span><div><h3 class="t-h3">Sign your lease</h3><p>Once approved, we'll walk you through the lease and make sure every document is completed correctly.</p></div></li>
+      <li class="step" data-reveal><span class="step__num">04</span><div><h3 class="t-h3">Get ready to move in</h3><ul><li>Set up utilities in your name before keys are released — <a href="residents.html#utilities">see utility setup</a></li><li>Provide proof of renter's insurance, effective your first day of occupancy</li><li>Complete a documented walk-through; we'll record the home's condition with photos</li></ul></div></li>
+    </ol>
+    <div class="note mt-48" data-reveal><strong>Fair housing.</strong> SierraLV supports the Fair Housing Act and Nevada fair housing law. We do not discriminate based on race, color, religion, sex, disability, familial status or national origin. <a href="residents.html#fair-housing">Learn about your rights</a>.</div>
+  </div>
+</section>
+
+<section class="section section--tint" id="find" aria-labelledby="find-h">
+  <div class="container split split--wide">
+    <div class="stack-24">
+      <p class="t-eyebrow">Need help finding a rental?</p>
+      <h2 id="find-h" class="t-h2" data-reveal>Tell us what you're looking for.</h2>
+      <p class="t-lead">Share your budget, preferred area and move-in date, and our leasing team will let you know about homes that fit.</p>
+    </div>
+    <form class="form" data-mailto="{{EMAIL}}" data-subject="Rental search request (website)">
+      <div class="form__row">
+        <div class="field"><label for="r-name">Full name</label><input id="r-name" name="Name" autocomplete="name" required></div>
+        <div class="field"><label for="r-phone">Phone</label><input id="r-phone" name="Phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="field"><label for="r-email">Email</label><input id="r-email" name="Email" type="email" autocomplete="email" required></div>
+      <div class="form__row">
+        <div class="field"><label for="r-type">Home type</label><select id="r-type" name="Home type"><option>House</option><option>Condo</option><option>Townhome</option><option>No preference</option></select></div>
+        <div class="field"><label for="r-budget">Monthly budget</label><input id="r-budget" name="Budget" inputmode="numeric" placeholder="e.g. $2,000"></div>
+      </div>
+      <div class="form__row">
+        <div class="field"><label for="r-area">Preferred area</label><input id="r-area" name="Area" placeholder="e.g. Henderson, Summerlin"></div>
+        <div class="field"><label for="r-date">Move-in date</label><input id="r-date" name="Move-in date" type="date"></div>
+      </div>
+      <div class="field"><label for="r-notes">Anything else? (bedrooms, pets, etc.)</label><textarea id="r-notes" name="Notes"></textarea></div>
+      <button class="btn btn--primary" type="submit">Send My Request</button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>

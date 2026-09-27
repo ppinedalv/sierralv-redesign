@@ -1,0 +1,96 @@
+<!--{"title": "Agent Referral Program — Earn Up to $560 | SierraLV", "desc": "Refer a rental property to SierraLV and earn up to $560 per new client. We keep you listed as the referring agent so the sale comes back to you.", "nav": "agents"}-->
+<section class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Home</a> / Agents</p>
+    <h1 class="t-display">Refer a rental. Earn up to <em class="serif">$560.</em></h1>
+    <p class="t-lead">Your client isn't ready to sell? We'll manage the home, keep them earning income — and send them back to you when it's time to list.</p>
+    <div class="btn-row mt-32"><a class="btn btn--light" href="#refer">Submit a Referral</a><a class="btn btn--ghost-light" href="tel:{{PHONE}}">{{icon:phone}}{{PHONE}}</a></div>
+  </div>
+</section>
+
+<section class="section section--paper" aria-labelledby="why-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="t-eyebrow">Partner with confidence</p>
+      <h2 id="why-h" class="t-h2" data-reveal>We never compete for your sale.</h2>
+      <p class="t-lead" data-reveal>You'll be listed as the referring agent in our management system. When your client decides to sell, we send them right back to you.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="card" data-reveal><div class="card__icon">{{icon:shield}}</div><h3 class="t-h3">Protect their biggest asset</h3><p>Full-service management that keeps your client's home cared for and earning.</p></div>
+      <div class="card" data-reveal style="--reveal-delay:80ms"><div class="card__icon">{{icon:dollar}}</div><h3 class="t-h3">Top-dollar referral fees</h3><p>Referral bonuses paid per new client, up to $560.</p></div>
+      <div class="card" data-reveal style="--reveal-delay:160ms"><div class="card__icon">{{icon:chart}}</div><h3 class="t-h3">Status updates</h3><p>We keep you informed on your referral from first call to signed lease.</p></div>
+      <div class="card" data-reveal style="--reveal-delay:240ms"><div class="card__icon">{{icon:users}}</div><h3 class="t-h3">Social promotion</h3><p>We'll share your property listings across our social channels.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="tiers-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="t-eyebrow">Referral bonuses</p>
+      <h2 id="tiers-h" class="t-h2" data-reveal>Three simple tiers.</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="tier tier--featured" data-reveal>
+        <p class="t-eyebrow">Gold</p>
+        <p class="tier__amount">$560</p>
+        <ul>
+          <li>{{icon:check}}Minimum 1-year management contract</li>
+          <li>{{icon:check}}Property is vacant</li>
+          <li>{{icon:check}}1-year lease term</li>
+          <li>{{icon:check}}Monthly rent of $2,500 or more</li>
+        </ul>
+      </div>
+      <div class="tier" data-reveal style="--reveal-delay:80ms">
+        <p class="t-eyebrow">Silver</p>
+        <p class="tier__amount">$400</p>
+        <ul>
+          <li>{{icon:check}}Minimum 1-year management contract</li>
+          <li>{{icon:check}}Property is vacant</li>
+          <li>{{icon:check}}1-year lease term</li>
+          <li>{{icon:check}}Monthly rent of $1,200–$2,495</li>
+        </ul>
+      </div>
+      <div class="tier" data-reveal style="--reveal-delay:160ms">
+        <p class="t-eyebrow">Standard</p>
+        <p class="tier__amount">$350</p>
+        <ul>
+          <li>{{icon:check}}Tenant-occupied properties</li>
+          <li>{{icon:check}}Or monthly rent below $1,200</li>
+        </ul>
+      </div>
+    </div>
+    <p class="t-small mt-32">Referral bonuses are issued per new client referred; multiple properties owned by the same client count as one referral. Referral fees may be subject to withholding or other taxes — referring agents should be aware of the laws in their market regarding referral payments.</p>
+  </div>
+</section>
+
+<section class="section section--tint" id="refer" aria-labelledby="refer-h">
+  <div class="container split split--wide">
+    <div class="stack-24">
+      <p class="t-eyebrow">Submit a referral</p>
+      <h2 id="refer-h" class="t-h2" data-reveal>Send us the details.</h2>
+      <p class="t-lead">We'll reach out to you and your client. Questions? Call Allyson Ashihara at <a href="tel:{{PHONE}}">{{PHONE}}</a>.</p>
+    </div>
+    <form class="form" data-mailto="{{EMAIL}}" data-subject="Agent referral (website)">
+      <div class="form__row">
+        <div class="field"><label for="a-name">Your name</label><input id="a-name" name="Agent name" autocomplete="name" required></div>
+        <div class="field"><label for="a-brk">Brokerage</label><input id="a-brk" name="Brokerage" autocomplete="organization"></div>
+      </div>
+      <div class="form__row">
+        <div class="field"><label for="a-phone">Phone</label><input id="a-phone" name="Agent phone" type="tel" autocomplete="tel" required></div>
+        <div class="field"><label for="a-email">Email</label><input id="a-email" name="Agent email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="form__row">
+        <div class="field"><label for="a-owner">Owner's name</label><input id="a-owner" name="Owner name" required></div>
+        <div class="field"><label for="a-ophone">Owner's phone or email</label><input id="a-ophone" name="Owner contact" required></div>
+      </div>
+      <div class="field"><label for="a-addr">Property address</label><input id="a-addr" name="Property address" required></div>
+      <div class="form__row">
+        <div class="field"><label for="a-type">Property type</label><select id="a-type" name="Property type"><option>Single family home</option><option>Condo</option><option>Townhome</option></select></div>
+        <div class="field"><label for="a-occ">Occupancy</label><select id="a-occ" name="Occupancy"><option>Vacant</option><option>Tenant occupied</option></select></div>
+      </div>
+      <button class="btn btn--primary" type="submit">Submit Referral</button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
