@@ -47,6 +47,15 @@
     it.addEventListener('mouseenter', () => { if (window.matchMedia('(hover: hover) and (min-width: 1080px)').matches) { closeAll(it); it.classList.add('is-open'); btn.setAttribute('aria-expanded', 'true'); } });
     it.addEventListener('mouseleave', () => { if (window.matchMedia('(hover: hover) and (min-width: 1080px)').matches) { it.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); } });
   });
+  // Close the mobile menu after picking a link (same-page anchors don't reload the page)
+  const closeNav = () => {
+    closeAll();
+    nav?.classList.remove('is-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+  nav?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeNav));
+
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
   document.addEventListener('click', (e) => { if (!e.target.closest('.nav__item[data-dropdown]') && window.innerWidth >= 1080) closeAll(); });
 
